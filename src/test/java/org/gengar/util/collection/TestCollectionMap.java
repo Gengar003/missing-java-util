@@ -15,21 +15,41 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 package org.gengar.util.collection;
 
-import java.util.List;
-
-import org.junit.Test;
-
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
+import org.junit.Before;
+import org.junit.Test;
 
 /**
  * User: awitt
  * Date: 13-06-12
  */
 public class TestCollectionMap {
+	
+	private DefaultListMap<String, Integer> $list_map;
+	
+	@Before
+	public void before() {
+		$list_map = new DefaultListMap<String, Integer>();
+	}
+	
+	private void populate_with_animals() {
+		$list_map.add( "dogs", 5 );
+		$list_map.add( "dogs", 6 );
+		$list_map.add( "dogs", 7 );
+		
+		$list_map.add( "cats", 0 );
+	}
 
 
 	@Test
-	public void basic_use_case() {
+	public void creation_valid() {
 		
+		populate_with_animals();
+		
+		assertEquals( new Integer(5), $list_map.get( "dogs" ).get( 0 ) );
+		
+		assertTrue( $list_map.get( "dogs" ).contains( 7 ) );
 	}
 }
