@@ -62,9 +62,9 @@ public abstract class
 
 		return collection.add( _value );
 	}
-
+	
 	@Override
-	public boolean remove(KeyType _key, ValueType _value) {
+	public boolean remove_from(KeyType _key, ValueType _value) {
 
 		CollectionType collection = $underlying_map.get( _key );
 

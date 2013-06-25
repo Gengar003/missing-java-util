@@ -45,7 +45,7 @@ public interface
 	 * @param _value The value to remove from the specified collection.
 	 * @return The removed value, or null if the value wasn't present
 	 */
-	public boolean remove(KeyType _key, ValueType _value);
+	public boolean remove_from(KeyType _key, ValueType _value);
 
 	/**
 	 * Removes all occurrences of the provided value across all collections contained in this map.

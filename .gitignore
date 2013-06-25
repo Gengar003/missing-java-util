@@ -10,3 +10,4 @@ out/*
 *.war
 *.ear
 *.tmproj
+/bin
