@@ -18,8 +18,13 @@ package org.gengar.util.collection;
 import java.util.Map;
 
 /**
- * User: awitt
- * Date: 13-06-14
+ * Interface representing a mapping of keys to other maps.
+ * @author awitt
+ *
+ * @param <InnerKeyType> The data type of keys in the inner maps.
+ * @param <ValueType> The data type of values in the inner maps.
+ * @param <InnerMapType> The data type of the inner maps.
+ * @param <KeyType> The data type of keys in the outer map.
  */
 public interface
 	IMapOfMaps<

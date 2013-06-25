@@ -16,6 +16,19 @@ package org.gengar.util.collection;
 
 import java.util.Map;
 
+/**
+ * A factory that can make maps!
+ * @author awitt
+ *
+ * @param <KeyType> The data type of the keys in the map.
+ * @param <ValueType> The data type of the values in the map.
+ * @param <MapType> The full type signature of the map produced by the factory.
+ */
 public interface IMapFactory<KeyType, ValueType, MapType extends Map<KeyType, ValueType>> {
-		public MapType make();
+	
+	/**
+	 * Instantiate and return a brand new map.
+	 * @return A brand new map.
+	 */
+	public MapType make();
 }

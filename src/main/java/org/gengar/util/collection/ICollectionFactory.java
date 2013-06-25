@@ -17,7 +17,18 @@ package org.gengar.util.collection;
 
 import java.util.Collection;
 
+/**
+ * Factory for creating new collections of an arbitrary type!
+ * @author awitt
+ *
+ * @param <ValueType> The data type of the objects in the collection.
+ * @param <CollectionType> The data type of the collections produced.
+ */
 public interface ICollectionFactory<ValueType, CollectionType extends Collection<ValueType>> {
-
+	
+	/**
+	 * Instantiate and return a new collection.
+	 * @return A newly-instantiated collection.
+	 */
 	public CollectionType make();
 }

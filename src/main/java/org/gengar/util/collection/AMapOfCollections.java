@@ -17,6 +17,15 @@ package org.gengar.util.collection;
 
 import java.util.*;
 
+/**
+ * Abstraction of Map-of-collections functionality, providing constructors and structure.
+ * 
+ * @author awitt
+ *
+ * @param <KeyType> The data type of the map's keys.
+ * @param <ValueType> The data type of the data in the collections.
+ * @param <CollectionType> The type of the collections that are mapped to keys.
+ */
 public abstract class
 	AMapOfCollections<
 		KeyType,
@@ -76,7 +85,7 @@ public abstract class
 	}
 
 	@Override
-	public Set<KeyType> removeAll(ValueType _value) {
+	public Set<KeyType> remove_all(ValueType _value) {
 
 		Set<KeyType> removed_from_keys = new HashSet<KeyType>();
 

@@ -19,6 +19,15 @@ import java.util.Collection;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ * An interface describing a map that maps keys to Collections. Some interesting higher-level operations can be defined
+ * with this interface, such as global removal.
+ * @author awitt
+ *
+ * @param <KeyType> The data type of the map's keys.
+ * @param <ValueType> The data type of the mapped collections' values.
+ * @param <CollectionType> The data type of the mapped collections.
+ */
 public interface
 	IMapOfCollections<
 		KeyType,
@@ -52,6 +61,6 @@ public interface
 	 * @param _value The value to remove.
 	 * @return A set containing all of the keys that mapped to a collection which formerly contained the value.
 	 */
-	public Set<KeyType> removeAll(ValueType _value);
+	public Set<KeyType> remove_all(ValueType _value);
 
 }
