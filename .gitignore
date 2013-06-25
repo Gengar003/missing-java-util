@@ -9,9 +9,11 @@ out/*
 #Eclipse Files
 .project
 .classpath
+.settings/*
 
 # Package Files #
 *.war
 *.ear
 *.tmproj
 /bin
+/target
