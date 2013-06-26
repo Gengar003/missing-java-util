@@ -52,7 +52,7 @@ public interface
 	 * Removes the specified value from the collection mapped to the provided key.
 	 * @param _key The key identifying the collection from which to remove.
 	 * @param _value The value to remove from the specified collection.
-	 * @return The removed value, or null if the value wasn't present
+	 * @return Whether any instances of the value were present and successfully removed. 
 	 */
 	public boolean remove_from(KeyType _key, ValueType _value);
 
