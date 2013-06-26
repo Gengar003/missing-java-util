@@ -13,7 +13,7 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-package org.gengar.util.collection;
+package org.gengar.util.collection.test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -21,6 +21,7 @@ import static org.junit.Assert.assertTrue;
 
 import java.util.Set;
 
+import org.gengar.util.collection.DefaultListMap;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -116,7 +117,7 @@ public class TestCollectionMap {
 		assertTrue( $list_map.get( "cats" ).contains( 5 ) );
 		assertTrue( $list_map.get( "bunnies" ).contains( 5 ) );
 		
-		boolean removed = $list_map.remove_from( "bunnies", 5 );
+		assertTrue( $list_map.remove_from( "bunnies", 5 ) );
 		
 		assertTrue( $list_map.get( "dogs" ).contains( 5 ) );
 		assertTrue( $list_map.get( "cats" ).contains( 5 ) );
