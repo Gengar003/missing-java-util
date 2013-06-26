@@ -15,6 +15,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 package org.gengar.util.tuple;
 
-public interface IMatchedTuple<SingleType> extends IGenericTuple<SingleType, SingleType> {
-
+/**
+ * A tuple in which both of the data objects are of the same type.
+ * @author awitt
+ *
+ * @param <SingleType> The data type of the tuple's objects
+ */
+public interface 
+	IMatchedTuple<SingleType> 
+	extends 
+		IGenericTuple<SingleType, SingleType> 
+{
 }

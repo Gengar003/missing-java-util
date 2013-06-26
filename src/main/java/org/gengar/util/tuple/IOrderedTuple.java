@@ -15,9 +15,20 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 package org.gengar.util.tuple;
 
-public interface IOrderedTuple<
-	First extends Comparable<First>, 
-	Second extends Comparable<Second>> extends 
+/**
+ * A tuple which contains comparable elements, and is therefore itself comparable.
+ * @author awitt
+ *
+ * @param <First> The data type of the first object in the tuple.
+ * @param <Second> The data type of the second object in the tuple.
+ */
+public interface 
+	IOrderedTuple<
+		First extends Comparable<First>, 
+		Second extends Comparable<Second>> 
+	extends 
 		IGenericTuple<First, Second>, 
-		Comparable<IOrderedTuple<First, Second>> {
+		Comparable<IOrderedTuple<First, Second>> 
+{
+	
 }

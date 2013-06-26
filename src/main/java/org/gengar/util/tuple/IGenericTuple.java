@@ -15,8 +15,26 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 package org.gengar.util.tuple;
 
-public interface IGenericTuple<First, Second> extends ITuple {
+import java.io.Serializable;
+
+/**
+ * Most generic tuple interface: Two objects of two unspecified types.
+ * @author awitt
+ *
+ * @param <First> The data type of the first object in the tuple.
+ * @param <Second> The data type of the second object in the tuple.
+ */
+public interface IGenericTuple<First, Second> extends Serializable {
 	
+	/**
+	 * Get the first object in the tuple.
+	 * @return The first object in the tuple.
+	 */
 	public First first();
+	
+	/**
+	 * Get the second object in the tuple.
+	 * @return The second object in the tuple.
+	 */
 	public Second second();
 }

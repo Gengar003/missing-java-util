@@ -17,8 +17,10 @@ package org.gengar.util.tuple;
 
 import java.io.Serializable;
 
-public interface ITuple extends Serializable {
-	
-	public Object first();
-	public Object second();
+/**
+ * The common, general tuple implementation: Two objects of any type, with no restrictions as to what types those might be.
+ * @author awitt
+ *
+ */
+public interface ITuple extends IMatchedTuple<Object>, Serializable {
 }

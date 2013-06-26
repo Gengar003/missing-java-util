@@ -13,15 +13,24 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-package org.gengar.util.tuple;
+package org.gengar.util.tuple.impl;
+
+import org.gengar.util.tuple.IMatchedTuple;
 
 /**
  * A tuple that contains items of only one type.
+ * @see IMatchedTuple
  * @author Austin
  *
- * @param <SingleType>
+ * @param <SingleType> The data type of the objects contained in the tuple.
  */
-public class MatchedTuple<SingleType> extends GenericTuple<SingleType, SingleType> implements IMatchedTuple<SingleType> {
+public class 
+	MatchedTuple<SingleType> 
+	extends 
+		GenericTuple<SingleType, SingleType>
+	implements 
+		IMatchedTuple<SingleType> 
+{
 
 	private static final long serialVersionUID = -536718241949678099L;
 

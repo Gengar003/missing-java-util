@@ -13,28 +13,15 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-package org.gengar.util.tuple;
+package org.gengar.util.tuple.impl;
 
-public class Tuple implements ITuple {
+import org.gengar.util.tuple.ITuple;
+
+public class Tuple extends MatchedTuple<Object> implements ITuple {
 	
 	private static final long serialVersionUID = -7022725964715713830L;
 	
-	protected Object $first;
-	protected Object $second;
-	
 	public Tuple(Object _first, Object _second) {
-		$first = _first;
-		$second = _second;
+		super( _first, _second );
 	}
-
-	@Override
-	public Object first() {
-		return $first;
-	}
-
-	@Override
-	public Object second() {
-		return $second;
-	}
-
 }
