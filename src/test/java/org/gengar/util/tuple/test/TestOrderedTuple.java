@@ -30,10 +30,8 @@ import org.junit.Test;
 public class TestOrderedTuple {
 
 	private List<IOrderedTuple<String, Integer>> $animal_list;
-	private List<IOrderedTuple<String, Integer>> $food_list;
 	
 	private List<IOrderedTuple<String, Integer>> $ordered_animal_list;
-	private List<IOrderedTuple<String, Integer>> $ordered_food_list;
 	
 	@Before
 	public void populate_lists() {

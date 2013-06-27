@@ -25,7 +25,6 @@ import java.util.List;
 
 import org.gengar.util.tuple.IGenericTuple;
 import org.gengar.util.tuple.impl.GenericTuple;
-import org.gengar.util.tuple.impl.MatchedTuple;
 import org.junit.Test;
 
 public class TestGenericTuple {
