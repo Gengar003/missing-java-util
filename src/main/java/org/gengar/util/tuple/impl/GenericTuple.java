@@ -76,4 +76,8 @@ public class GenericTuple<First, Second> implements IGenericTuple<First, Second>
 			TupleUtils.equals_helper( $first, _other.first() ) &&
 			TupleUtils.equals_helper( $second, _other.second() );
 	}
+	
+	public String toString() {
+		return "(" + $first + ", " + $second + ")";
+	}
 }

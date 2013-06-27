@@ -63,6 +63,10 @@ public class
 	@Override
 	public int compareTo(IOrderedTuple<First, Second> _other) {
 		
+		if( null == _other ) {
+			return 1; // Null is less than everything; anything is greater than null.
+		}
+		
 		int first_pass = TupleUtils.compare_helper( $first, _other.first() );
 		
 		if( 0 != first_pass ) {
